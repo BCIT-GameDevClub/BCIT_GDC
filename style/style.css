@@ -1,0 +1,62 @@
+body{
+	background: gray;
+}
+
+@font-face {
+    font-family: "Silkscreen";
+    src: url(../fonts/Silkscreen/slkscr.ttf) format("truetype");
+}
+.pixel-txt { 
+    font-family: "Silkscreen";
+}
+
+.coloured-red-d{
+	color: rgb(100, 0, 0);
+}
+
+.coloured-yellow-d{
+	color: rgb(255,165,0);
+}
+
+.coloured-green-d{
+	color: rgb(0, 100, 0);
+}
+
+.coloured-blue-d{
+	color: rgb(0, 0, 180);
+}
+
+.coloured-gold-d{
+	color: rgb(207,181,59);
+}
+
+
+@media screen and (min-width: 720px)
+{
+	.centered-horizontally{
+		text-align: center;
+	}
+
+	.centered-vertically{
+		padding-top: 15%;
+	}
+
+	.big-text{
+		font-size: 400%;
+	}
+
+	.empty-space-m{
+		padding: 5%;
+	}
+
+	.content-text{
+		font-size: 180%;
+		width: 70%;
+    	margin: auto;
+		font-family: "Lucida Console";
+	}
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+	background-image: url("../images/menu-active.png");
+}
