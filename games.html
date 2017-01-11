@@ -18,7 +18,9 @@
 
 		crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<script type="text/javascript" src="script/script.js"></script>
+		<script type="text/javascript" src="script/input-js.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/custom-slider.css">
+		<link rel="stylesheet" type="text/css" href="style/hooks.css">
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -45,9 +47,51 @@
 			<div class="big-text">
 				<img src="images/Games.png">
 			</div>
+			<!-- Year Selector -->
+			<div class="col-lg-4 col-lg-push-4">
+				<input class="slider" id="year-slider" type="range" id="rangeInput" name="rangeInput" value="2016" step="1" min="2015" max="2017">
+				<div id="year-slider-label" class="slider-label">2016</div>
+			</div>
 			<!-- Game List -->
-			<div class="empty-space-m"></div>
-			<div class="content-text">
+			<div class="col-lg-12">
+				<div class="text-hook" hook-target="year-slider-label" hook-func="0" hook-val="2017">
+					<div class="game-cell col-lg-4">
+						<div class="game-title">
+							<a href="http://globalgamejam.org/2016/games/totem-god" target="_blank">Totem God</a>
+						</div>
+						<div class="game-icons">
+							<img src="images/icons/platform-windows.png" alt="windows platform" />
+							<img src="images/icons/platform-html.png" alt="html platform" />
+							<img src="images/icons/platform-plugin.png" alt="plugin platform" />
+						</div>
+						<div class="game-image">
+							<img src="images/games/totemgod.png" alt="game totem god" />
+						</div>
+						<div class="game-desc">
+							<p>
+							Collect all 3 sacrificial items needed to complete the ritual to enter God Mode and annihilate the other players!
+							</p>
+						</div>
+					</div>
+
+					<div class="game-cell col-lg-4 col-md-4">
+						<div class="game-title">
+							<a href="http://globalgamejam.org/2016/games/totem-god" target="_blank">Why Not Summon A Human</a>
+						</div>
+						<div class="game-icons">
+							<img src="images/icons/platform-html.png" alt="html platform" />
+						</div>
+						<div class="game-image">
+							<img src="images/games/wnsah.png" alt="game totem god" />
+						</div>
+						<div class="game-desc">
+							<p>
+							A group of party daemons do a summoning dance in search of wisdom.
+							</p>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
 
