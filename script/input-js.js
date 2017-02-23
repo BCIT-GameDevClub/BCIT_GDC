@@ -6,7 +6,7 @@ var textHooks;
 var hookFuncs = [showOnEqualTextHookVal];
 
 // Everything after the document is loaded
-$(document).ready(function(){
+$( window ).on( "load", function(){
 
 	// Slider
 	initSliders();
@@ -37,7 +37,7 @@ function initTextHooks(){
 		var element = textHooks[i];
 
 		var funcVal = parseInt(element.getAttribute("hook-func"));
-	    hookFuncs[funcVal](element, $('#' + hookId));
+	    hookFuncs[funcVal](element, $('#' + hookId)[0]);
 
 		$('#' + hookId).on('DOMSubtreeModified', function () {
 			funcVal = parseInt(element.getAttribute("hook-func"));
@@ -51,11 +51,9 @@ function initTextHooks(){
 //hook, desiredVal
 function showOnEqualTextHookVal(element, hookTarget){
 	if(parseInt(element.getAttribute("hook-val")) == parseInt(hookTarget.innerHTML)){
-		console.log("AA");
 		element.style.display = "block";
 	}
 	else{
-		console.log("BB");
 		element.style.display = "none";
 	}
 }
