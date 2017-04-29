@@ -4,6 +4,11 @@ body{
 .folder{
     margin: auto;
     position: relative;
+    margin-top: 60px;
+}
+.folder a{
+    color: blue;
+    text-decoration: underline;
 }
 
 .folder div{
@@ -78,7 +83,7 @@ user-select: none;
 .paper-content{
     margin: 7px;
     top: 24.5px;
-    max-width: 330px;
+    max-width: 300px;
 }
 #art-page .sticky{
     top:0px;
@@ -112,10 +117,15 @@ user-select: none;
     z-index: 2;
 }
 h1{
-    font-size: 1.9em;
+    font-size: 1.6em;
+    font-family: fantasy;
 }
 p{
-    font-size: 1em;
+    font-size: 0.8em;
+    font-family: fantasy;
+}
+ul{
+    font-size: 0.75em;
 }
 
 
@@ -125,6 +135,9 @@ p{
     }
     p{
         font-size: 1.5em;
+    }
+    ul{
+        font-size: 1em;
     }
     .cover-page{
         top: 66px;
