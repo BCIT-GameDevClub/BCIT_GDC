@@ -26,6 +26,8 @@
 		crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<script type="text/javascript" src="script/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style/resources.css">
+		<script type="text/javascript" src="script/resources.js"></script>
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -48,6 +50,7 @@
 			</div>
 		</nav>
 		<!-- Content -->
+        <!--
         <div class="container">
           <h3>Resources</h3>
           <ul class="nav nav-tabs">
@@ -58,6 +61,63 @@
           </ul>
           <br>
           <p><strong>Note:</strong> This example shows how to create a basic navigation tab. It is not toggleable/dynamic yet (you can't click on the links to display different content)- see the last example in the Bootstrap Tabs and Pills Tutorial to find out how this can be done.</p>
+        </div>
+        -->
+        <div class="container folder">
+            <div id="f-cover-page" class="cover-page">
+                <img src="images/resources-page/front-cover-1080p.png" />
+            </div>
+            <div id="art-page" class="page">
+                <div class="paper">
+                    <div class="paper-content">
+                        <h1>Art References</h1>
+                        <p>TEst</p>
+                    </div>
+                </div>
+                <img class="sticky" src="images/resources-page/art-sticky-1080p.png" onclick="changePage(1, 'art-page')"/>
+            </div>
+            <div id="code-page" class="page">
+                <div class="paper">
+                    <div class="paper-content">
+                        <h1>Art References</h1>
+                        <p>TEst</p>
+                    </div>
+                </div>
+                <img class="sticky" src="images/resources-page/code-sticky-1080p.png" onclick="changePage(2, 'code-page')"/>
+            </div>
+            <div id="music-page" class="page">
+                <div class="paper">
+                    <div class="paper-content">
+                        <h1>Art References</h1>
+                        <p>TEst</p>
+                    </div>
+                </div>
+                <img class="sticky" src="images/resources-page/music-sticky-1080p.png" onclick="changePage(3, 'music-page')"/>
+            </div>
+            <div id="pm-page" class="page">
+                <div class="paper">
+                    <div class="paper-content">
+                        <h1>Art References</h1>
+                        <p>TEst</p>
+                    </div>
+                </div>
+                <img class="sticky" src="images/resources-page/project-management-sticky-1080p.png" onclick="changePage(4, 'pm-page')"/>
+            </div>
+            <div id="market-page" class="page">
+                <div class="paper">
+                    <div class="paper-content">
+                        <h1>Art References</h1>
+                        <p>TEst</p>
+                    </div>
+                </div>
+                <img class="sticky" src="images/resources-page/marketing-sticky-1080p.png" onclick="changePage(5, 'market-page')"/>
+            </div>
+            <div id="background-paper-page" class="cover-page">
+                <img src="images/resources-page/background-papers-1080p.png" />
+            </div>
+            <div id="b-cover-page" class="cover-page">
+                <img src="images/resources-page/back-cover-1080p.png" />
+            </div>
         </div>
 
 		<!-- Footer -->
