@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="style/resources.css">
+    <script src="script/resources.js"></script>
+</head>
+	<body>
+		<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">	
+            <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                    
+                  <a class="navbar-brand" href="home.html"><img src="images/GDClogo.png" alt="GDC"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="#">About</a>
+                        </li>
+                        <li><a href="#">Games</a>
+                        </li>
+                          <li><a href="gallery.html">Gallery</a>
+                        </li>
+                        <li><a href="#">Calendar</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+		<!-- Content -->
+        <!--
+        <div class="container">
+          <h3>Resources</h3>
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+          </ul>
+          <br>
+          <p><strong>Note:</strong> This example shows how to create a basic navigation tab. It is not toggleable/dynamic yet (you can't click on the links to display different content)- see the last example in the Bootstrap Tabs and Pills Tutorial to find out how this can be done.</p>
+        </div>
+        -->
+        <div class="container">
+            <div class="folder">
+                <div id="f-cover-page" class="cover-page">
+                </div>
+                <div id="art-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Art Resources</h1>
+                            <p>TEst</p>
+                        </div>
+                    </div>
+                    <div class="sticky" onclick="changePage(1, 'art-page')"></div>
+                </div>
+                <div id="code-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Programming Resources</h1>
+                            <p>TEst</p>
+                        </div>
+                    </div>
+                    <div class="sticky" onclick="changePage(2, 'code-page')"></div>
+                </div>
+                <div id="music-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Music Resources</h1>
+                            <p>TEst</p>
+                        </div>
+                    </div>
+                    <div class="sticky" onclick="changePage(3, 'music-page')"></div>
+                </div>
+                <div id="pm-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Project Management Resources</h1>
+                            <p>TEst</p>
+                        </div>
+                    </div>
+                    <div class="sticky" onclick="changePage(4, 'pm-page')"></div>
+                </div>
+                <div id="market-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Marketing Resources</h1>
+                            <p>TEst</p>
+                        </div>
+                    </div>
+                    <div class="sticky" onclick="changePage(5, 'market-page')"></div>
+                </div>
+                <div id="background-paper-page" class="cover-page">
+                </div>
+                <div id="b-cover-page" class="cover-page">
+                </div>
+            </div>
+        </div>
+
+		<!-- Footer -->
+		<footer>
+			
+		</footer>
+	</body>
+</html>
