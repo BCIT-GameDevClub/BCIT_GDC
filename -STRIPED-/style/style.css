@@ -1,0 +1,148 @@
+body{
+	background: gray;
+}
+
+.pixel-txt { 
+    font-family: "Silkscreen";
+}
+
+.coloured-red-d{
+	color: rgb(100, 0, 0);
+}
+
+.coloured-yellow-d{
+	color: rgb(255,165,0);
+}
+
+.coloured-green-d{
+	color: rgb(0, 100, 0);
+}
+
+.coloured-blue-d{
+	color: rgb(0, 0, 180);
+}
+
+.coloured-gold-d{
+	color: rgb(207,181,59);
+}
+
+
+@media screen and (min-width: 720px)
+{
+	.centered-horizontally{
+		text-align: center;
+	}
+
+	.centered-vertically{
+		padding-top: 15%;
+	}
+
+	.big-text{
+		font-size: 400%;
+	}
+
+	.empty-space-m{
+		margin-top: 50px;
+	}
+
+	.empty-space-sm{
+		margin-top: 30px;
+	}
+
+	.content-text{
+		font-size: 20px;
+		width: 900px;
+    	margin-left: auto;
+    	margin-right: auto;
+		font-family: "Lucida Console";
+	}
+
+	.image-gallery{
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+		width: 600px;
+		height: 275px;
+		background-color: black;
+
+	}
+
+	.image-gallery > img{
+		height: 100%;
+	}
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+	background-image: url("../images/menu-active.png");
+}
+
+.game-cell{
+	background-color: darkgray;
+	position: relative;
+	font-family: "Verdana";
+	margin: 0.1%;
+	border: 10px solid gray;
+}
+
+.game-title{
+	text-align: center;
+	font-size: 200%;
+}
+
+.game-icons{
+	width: 100%;
+	height: 10%;
+	position: relative;
+	background-color: gray;
+	text-align: center;
+}
+
+.game-icons img{
+	height: 80%;
+	position: relative;
+}
+
+.game-image{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	border: 1% solid black;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.game-image img{
+	width:  50%;
+}
+
+.game-desc{
+	font-size: 170%;
+}
+
+
+@media screen and (min-device-width: 768px){
+
+	.row-height {
+	  display: table;
+	  table-layout: fixed;
+	  height: 100%;
+	  width: 100%;
+	}
+	.col-height {
+	  display: table-cell;
+	  float: none;
+	  height: 100%;
+	}
+}
+
+
+
+.page-title img{
+	height: 100%;
+}
+
+.page-title{
+	position: relative;
+	height: 150px;
+	text-align: center;
+}

@@ -6,6 +6,7 @@
         <style>
             #about h1{
                 color: black;
+                
             }
             #about h2{
                 text-align: left;
@@ -18,20 +19,31 @@
             #about li{
                 font-size: 16px;
             }
+            .spacer{
+                margin: 500px;
+            }
             .noStyle{
                 list-style-type: none;
             }
-            .spacer{
-                margin-top: 5%;
-            }
-            .hero-unit{
-                background-image: url(/images/development.jpg);
+            .imageHolder{
+                background-image: url(/-STRIPED-/images/development.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                width: 100%;
                 height: 100%;
-                widows: 100%;
-                padding: 0;
+                position: absolute;
+                right: 0;
+                opacity: 0.5;
+                z-index: -1;
+            }
+            .hero-unit{
+                height: 100%;
+                width: 100%;
+                margin-top: 50px;
+            }
+            .content-text{
+                margin-top: 70px;;
             }
             ul{
                 text-align: left;
@@ -41,73 +53,57 @@
             }
             
         </style>
-
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		<script
-	  src="https://code.jquery.com/jquery-3.1.1.min.js"
-	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	  crossorigin="anonymous"></script>
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-		crossorigin="anonymous"></script>
-        
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<script type="text/javascript" src="script/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
 	</head>
 	<body id="about">
 		<!-- Navigation -->
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<!-- Logo -->
-				<div class="navbar-header">
-					<!-- Insert Image for Logo -->
-					<a href="#" class="navbar-brand">BCIT Game Dev Club</a>
-				</div>
-				<div>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="about.html">About</a></li>
-						<li><a href="games.html">Games</a></li>
-						<li><a href="contactus.html">Contact Us</a></li>
-						<li><a href="resources.html">Resources</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- Content -->
-<div class="hero-unit">
-  <div class="container">
-          <div class="row-fluid">
-            <div>
-              <h1>Build Worlds With Us.</h1>
-              <p>Hello World! <br> You just found the headquarters of the BCIT Game Development Club!</p>
-              <p>Our club is, as you might have guessed; a game development club run by students at BCIT. The goal of our club is to provide resources, experience, and a collaborative environment for anyone interested in game development. And, of course, to have fun while doing it!</p>
-              <p><a href="#target" class="btn btn-primary btn-large">Learn more »</a></p>
+	<nav class="navbar navbar-default navbar-fixed-top">	
+            <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                    
+                  <a class="navbar-brand" href="home.html"><img src="images/GDClogo.png" alt="GDC"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="#">About</a>
+                        </li>
+                        <li><a href="#">Games</a>
+                        </li>
+                          <li><a href="gallery.html">Gallery</a>
+                        </li>
+                        <li><a href="#">Calendar</a>
+                        </li>
+                    </ul>
+                </div>    
             </div>
+	</nav>
+        <!-- Content -->
+    <div class="hero-unit">
+        <div class="imageHolder"></div>
+      <div class="container">
+              <div class="row-fluid">
+                <div>
+                  <h1>Build Worlds With Us.</h1>
+                  <p>Hello World! <br> You just found the headquarters of the BCIT Game Development Club!</p>
+                  <p>Our club is, as you might have guessed; a game development club run by students at BCIT. The goal of our club is to provide resources, experience, and a collaborative environment for anyone interested in game development. And, of course, to have fun while doing it!</p>
+                  <p><a href="#target" class="btn btn-primary btn-large">Learn more »</a></p>
+                </div>
+              </div>
           </div>
-      </div>
-</div>
-		<div class="centered-horizontally container-fluid">
-            <!--
-            <div class="hero-unit">
-              <div class="container">
-                      <div class="row-fluid">
-                        <div class="span12">
-                          <h1>Build Worlds With Us.</h1>
-                            <h2>Hello World!</h2>
-                            <p>You have just found the headquarters of the BCIT Game Development Club!</p>
-                            <p>Our club is, as you might have guessed; a game development club run by students at BCIT. The goal of our club is to provide resources, experience, and a collaborative environment for anyone interested in game development. And, of course, to have fun while doing it!</p>
-                          <p><a href="#target" class="btn btn-primary btn-large">Learn more »</a></p>
-                        </div>
-                      </div>
-                  </div>
-            </div>
---> 
-
-			<div class="content-text" id="target">
+    </div>
+		<div class="centered-horizontally container-fluid" id="target">
+			<div class="content-text">
                 <h2>What we do</h2>
                 <p>To enrich our members experience we plan various activities such as...</p>
                 <ul>
@@ -118,7 +114,7 @@
                 </ul>
                 <p>Our most notable club activity is our mini <a data-toggle="popover" data-placement="top" data-trigger="hover" title="A Game Jam is..." data-content="an event where participants gather for the sole purpose of creating a game. A game jam can be done alone or with a team and a jam usually goes on for 72 hours!">game jam</a> sessions. At these mini-game jam sessions the execs of the club provide a theme (or more) for their game and everyone works on it at the meeting. These mini-jams last for about 4 weeks to an entire semester depending on the difficulty of the theme. At the end of it we hold party in the form of a showcase, where we show off our creations within the club or to the public!
                 
-                <h1>Meet our execs!</h1>
+                <h2>Meet our execs!</h2>
                 <small><del>Yes we look alike</del></small>
                 <!--Exec Thumbnails-->
                 <div class="row">
