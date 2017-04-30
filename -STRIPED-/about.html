@@ -26,10 +26,7 @@
                 list-style-type: none;
             }
             .imageHolder{
-                background-image: url(/-STRIPED-/images/development.jpg);
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
+                
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -51,7 +48,6 @@
             body, html{
                 height: 100%;
             }
-            
         </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -63,46 +59,50 @@
 	</head>
 	<body id="about">
 		<!-- Navigation -->
-	<nav class="navbar navbar-default navbar-fixed-top">	
-            <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                  </button>
-                    
-                  <a class="navbar-brand" href="home.html"><img src="images/GDClogo.png" alt="GDC"></a>
+        <nav class="navbar navbar-default navbar-fixed-top">	
+                <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                      </button>
+
+                      <a class="navbar-brand" href="home.html"><img src="images/GDClogo.png" alt="GDC"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li ><a href="#">About</a>
+                            </li>
+                            <li><a href="#">Games</a>
+                            </li>
+                              <li><a href="gallery.html">Gallery</a>
+                            </li>
+                            <li><a href="#">Calendar</a>
+                            </li>
+                        </ul>
+                    </div>    
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li ><a href="#">About</a>
-                        </li>
-                        <li><a href="#">Games</a>
-                        </li>
-                          <li><a href="gallery.html">Gallery</a>
-                        </li>
-                        <li><a href="#">Calendar</a>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-	</nav>
-        <!-- Content -->
+        </nav>
+    <!-- Content -->
+    <!--Hero Page-->
     <div class="hero-unit">
         <div class="imageHolder"></div>
       <div class="container">
               <div class="row-fluid">
                 <div>
                   <h1>Build Worlds With Us.</h1>
-                  <p>Hello World! <br> You just found the headquarters of the BCIT Game Development Club!</p>
-                  <p>Our club is, as you might have guessed; a game development club run by students at BCIT. The goal of our club is to provide resources, experience, and a collaborative environment for anyone interested in game development. And, of course, to have fun while doing it!</p>
-                  <p><a href="#target" class="btn btn-primary btn-large">Learn more »</a></p>
+                  <p>Hello World! <br> You just found the headquarters of the BCIT Game Development Club!
+                  <br>
+                  Our club is, as you might have guessed; a game development club run by students at BCIT. The goal of our club is to provide resources, experience, and a collaborative environment for anyone interested in game development. And, of course, to have fun while doing it!</p>
+                  <p><a href="#target" class="btn btn-primary btn-large">Learn more! »</a></p>
                 </div>
               </div>
           </div>
     </div>
-		<div class="centered-horizontally container-fluid" id="target">
+        
+        <!--What We Do section-->
+        <div class="centered-horizontally container-fluid" id="target">
 			<div class="content-text">
                 <h2>What we do</h2>
                 <p>To enrich our members experience we plan various activities such as...</p>
@@ -114,6 +114,7 @@
                 </ul>
                 <p>Our most notable club activity is our mini <a data-toggle="popover" data-placement="top" data-trigger="hover" title="A Game Jam is..." data-content="an event where participants gather for the sole purpose of creating a game. A game jam can be done alone or with a team and a jam usually goes on for 72 hours!">game jam</a> sessions. At these mini-game jam sessions the execs of the club provide a theme (or more) for their game and everyone works on it at the meeting. These mini-jams last for about 4 weeks to an entire semester depending on the difficulty of the theme. At the end of it we hold party in the form of a showcase, where we show off our creations within the club or to the public!
                 
+                <!--Meet our execs section-->
                 <h2>Meet our execs!</h2>
                 <small><del>Yes we look alike</del></small>
                 <!--Exec Thumbnails-->
@@ -160,6 +161,7 @@
                     </div>
                 </div>
                 
+                <!--Meeting information section-->
                 <h2>Meeting information</h2>
                 <p>Like what you see? Don't know what to think about us? Well come on down anyways! Visitors are always welcome!</p>
                 <ul class="noStyle">
@@ -177,6 +179,8 @@
 		<footer>
 			
 		</footer>
+        
+        <!--Script-->
         <script>
             //**Popover - That pop-up thing over "game jam" link
             $(document).ready(function(){
