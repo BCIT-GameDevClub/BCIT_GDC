@@ -95,7 +95,8 @@ position: absolute;
 @media(max-width: 768px){
     .pure-g {
         width:100%;
-        margin-top: 30%;
+        margin-top: 25%;
+        margin-bottom: 10%;
     }
     
 }
@@ -103,7 +104,8 @@ position: absolute;
 @media (min-width: 1200px) {
     .pure-g {
     width: 1170px;
-         margin-top: 5%;
+        margin-top: 5%;
+        margin-bottom: 10%;
     } 
     
     .item.active img{
