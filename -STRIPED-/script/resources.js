@@ -3,8 +3,8 @@ var currentPageID = "f-cover-page";
 var currentPageZIndex = 0;
 
 function changePage(pageID) {
+    document.getElementById("f-cover-page").style.display = "none";
     if(currentPageID != "f-cover-page"){
-        document.getElementById("f-cover-page").style.display = "none";
         document.getElementById(currentPageID).style.zIndex = currentPageZIndex;
     }
     
