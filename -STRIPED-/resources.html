@@ -41,23 +41,35 @@
             </div>
         </nav>
 		<!-- Content -->
-        <!--
-        <div class="container">
-          <h3>Resources</h3>
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Menu 1</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 3</a></li>
-          </ul>
-          <br>
-          <p><strong>Note:</strong> This example shows how to create a basic navigation tab. It is not toggleable/dynamic yet (you can't click on the links to display different content)- see the last example in the Bootstrap Tabs and Pills Tutorial to find out how this can be done.</p>
-        </div>
-        -->
         <div class="container">
             <div class="folder">
+                <!-- Page Template
+                <div id="{{topic}}-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>{{topic}} Resources</h1>
+                            <p>{{Group name}}</p>
+                            <ul>
+                                <li>
+                                    Blender
+                                    <a href="{{link}}" target="_blank">website</a>
+                                    <a href="{{link}}" target="_blank">tutorials</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sticky" onclick="changePage('{{topic}}-page')"></div>
+                </div>
+
+        
+
+
+                -->
+                
+                
                 <div id="f-cover-page" class="cover-page">
                 </div>
+                <!-- Art Page -->
                 <div id="art-page" class="page">
                     <div class="paper">
                         <div class="paper-content">
@@ -97,6 +109,11 @@
                                     <a href="http://www.autodesk.com/education/free-software/maya" target="_blank">website</a>
                                     <a href="https://www.youtube.com/watch?v=tElsku3aKQI" target="_blank">tutorials</a>
                                 </li>
+                                <li>
+                                    Sketchup
+                                    <a href="https://www.sketchup.com/" target="_blank">website</a>
+                                    <a href="https://www.sketchup.com/learn" target="_blank">tutorials</a>
+                                </li>
                             </ul>
                             <p>Free Assets</p>
                             <ul>
@@ -106,16 +123,68 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="sticky" onclick="changePage(1, 'art-page')"></div>
+                    <div class="sticky" onclick="changePage('art-page')"></div>
                 </div>
                 <div id="code-page" class="page">
                     <div class="paper">
                         <div class="paper-content">
                             <h1>Programming Resources</h1>
-                            <p>TEst</p>
+                            <p>Game Engines</p>
+                            <ul>
+                                <li>
+                                    Blender (3D Game Engine)
+                                    <a href="https://www.blender.org/" target="_blank">website</a>
+                                    <a href="https://www.blender.org/support/tutorials/" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Unity (3D/2D Game Engine)
+                                    <a href="https://unity3d.com/" target="_blank">website</a>
+                                    <a href="https://unity3d.com/learn/tutorials" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Unreal (3D/2D Game Engine)
+                                    <a href="https://www.unrealengine.com/what-is-unreal-engine-4" target="_blank">website</a>
+                                    <a href="https://docs.unrealengine.com/latest/INT/Videos/" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Ren'Py (Visual Novel Game Engine)
+                                    <a href="https://www.renpy.org/" target="_blank">website</a>
+                                    <a href="https://www.renpy.org/wiki/renpy/doc/tutorials/Tutorials" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Twine (Interactive Text Game Engine)
+                                    <a href="http://twinery.org/" target="_blank">website</a>
+                                    <a href="http://www.auntiepixelante.com/twine/" target="_blank">tutorials</a>
+                                </li>
+                                <li><a href="http://www.pixelprospector.com/the-big-list-of-game-making-tools/" >MORE!!!</a><li>
+                            </ul>
+                            <p>Learn Programming</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.w3schools.com/">W3Schools</a> 
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.codecademy.com/learn/all">CodeCademy</a> 
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>JavaScript</li>
+                                        <li>Python</li>
+                                        <li>Java</li>
+                                    </ul>
+                                </li>
+                                    <a href="https://www.tutorialspoint.com/index.htm">Tutorials Point</a> 
+                                    <ul>
+                                        <li>A lot</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="sticky" onclick="changePage(2, 'code-page')"></div>
+                    <div class="sticky" onclick="changePage('code-page')"></div>
                 </div>
                 <div id="music-page" class="page">
                     <div class="paper">
@@ -124,7 +193,7 @@
                             <p>TEst</p>
                         </div>
                     </div>
-                    <div class="sticky" onclick="changePage(3, 'music-page')"></div>
+                    <div class="sticky" onclick="changePage('music-page')"></div>
                 </div>
                 <div id="pm-page" class="page">
                     <div class="paper">
@@ -133,7 +202,7 @@
                             <p>TEst</p>
                         </div>
                     </div>
-                    <div class="sticky" onclick="changePage(4, 'pm-page')"></div>
+                    <div class="sticky" onclick="changePage('pm-page')"></div>
                 </div>
                 <div id="market-page" class="page">
                     <div class="paper">
@@ -142,7 +211,7 @@
                             <p>TEst</p>
                         </div>
                     </div>
-                    <div class="sticky" onclick="changePage(5, 'market-page')"></div>
+                    <div class="sticky" onclick="changePage('market-page')"></div>
                 </div>
                 <div id="background-paper-page" class="cover-page">
                 </div>

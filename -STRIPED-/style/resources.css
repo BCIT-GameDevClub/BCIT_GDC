@@ -131,13 +131,13 @@ ul{
 
 @media only screen and (min-width: 768px) {
     h1{
-        font-size: 2.5em;
+        font-size: 1.6em;
     }
     p{
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     ul{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .cover-page{
         top: 66px;
@@ -211,6 +211,15 @@ ul{
     }
 }
 @media only screen and (min-width: 1024px) {
+    h1{
+        font-size: 2.5em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    ul{
+        font-size: 1em;
+    }
     .cover-page{
         top: 110px;
     }

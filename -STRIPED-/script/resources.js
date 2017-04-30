@@ -2,12 +2,12 @@ var currentPageID = "f-cover-page";
 //The original z-index of the current page
 var currentPageZIndex = 0;
 
-function changePage(page, pageID) {
+function changePage(pageID) {
     if(currentPageID != "f-cover-page"){
+        document.getElementById("f-cover-page").style.display = "none";
         document.getElementById(currentPageID).style.zIndex = currentPageZIndex;
     }
     
-    if(page != 0) document.getElementById("f-cover-page").style.display = "none";
     
     currentPageZIndex = parseInt(getComputedStyle(document.getElementById(pageID)).zIndex);
     
