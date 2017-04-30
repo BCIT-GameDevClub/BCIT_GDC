@@ -1,0 +1,111 @@
+.folder{
+    position: relative;
+}
+
+.folder div{
+    position: absolute;
+    display: inline;
+}
+
+.folder .page{
+    position: relative;
+}
+
+.page img{
+    position: absolute;
+    display: inline;
+}
+.cover-page{
+    top: 110px;
+}
+
+#f-cover-page{
+    z-index: -1;
+}
+
+.page{
+    top: 10px;
+}
+
+img{
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+
+.paper{
+    background-image: url("../images/resources-page/page-1080p.png");
+    min-width: 746px;
+    min-height: 1209px;
+}
+
+.paper{
+    top: 100px;
+    left: 10px;
+}
+
+.paper-content{
+    margin: 20px;
+    top: 70px;
+}
+
+#art-page{
+    z-index: -2;
+}
+
+#art-page .sticky{
+    left: 20px;
+}
+
+#code-page{
+    z-index: -3;
+}
+
+#code-page .sticky{
+    left: 125px;
+}
+
+#music-page{
+    z-index: -4;
+}
+
+#music-page .sticky{
+    left: 230px;
+}
+
+#pm-page{
+    z-index: -5;
+}
+
+#pm-page .sticky{
+    left: 335px;
+}
+
+#market-page{
+    z-index: -6;
+}
+
+#market-page .sticky{
+    left: 440px;
+}
+
+#background-paper-page{
+    z-index: -7;
+}
+
+#b-cover-page{
+    z-index: -8;
+}
+
+
+
+.sticky{
+    transition: transform 0.5s;
+}
+
+.sticky:hover {
+    transform: translateY(-10px);
+}
