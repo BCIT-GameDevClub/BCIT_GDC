@@ -1,5 +1,5 @@
 body {
-  font: 400 20px Lato, sans-serif;
+ font-family: Montserrat, sans-serif;
   line-height: 1.8;
   color: #818181;
     background-color: black;
@@ -185,5 +185,70 @@ position: absolute;
     position: relative;
 }
 
+.section.white
+{
+    background-color: #4e4c4c;
+}
+.gameslist
+{
+    list-style: none;
+}
 
+.section.white h2
+{
+    font-size: 1.6em; margin-top: 20%; text-align: center;
+}
 
+.section.white ul
+{
+    list-style: none; padding: 0; margin-top: 0px;
+}
+
+.section.white li .games{
+     background-color:#bdbdbd; margin-bottom: 10px; padding-bottom:10px; display: inline-block; width: 100%;  border: 2px solid; border-color: black;
+}
+
+.section.white.games
+{
+    width: 100%;
+}
+.section.white li img
+{
+    padding-top: 15px; width: 100%;
+}
+
+.visible-title h4
+{
+    font-size: 1.1em;
+}
+
+.gamedesc
+{
+    font-size: 0.7em;
+}
+
+.section.white.categories a
+{
+    font-size: 0.5em;
+}
+
+.visible-title a
+{
+    color: darkblue;
+}
+
+@media (min-width: 480px){
+    .section.white h2
+    {
+        font-size: 1.6em; text-align: center;
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 1200px){
+    .section.white h2
+    {
+        font-size: 1.6em; text-align: center;
+        margin-top: 5%;
+    }
+}
