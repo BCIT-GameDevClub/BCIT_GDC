@@ -20,9 +20,11 @@
                 font-size: 20px;
                 color: lightgray
             }
-<<<<<<< HEAD
+            /**
+<<<<<<< HEAD 
             
 =======
+            **/
             /*
 >>>>>>> 963442eabf97cb64deb9f51eeafd5d2550aaed2b
             #about li{
@@ -44,7 +46,7 @@
             */
             .spacer{
                 margin: 500px;
->>>>>>> 963442eabf97cb64deb9f51eeafd5d2550aaed2b
+/**>>>>>>> 963442eabf97cb64deb9f51eeafd5d2550aaed2b**/
             }
             
             
@@ -97,6 +99,14 @@
                 animation: sprite .3s steps(4) infinite;
             }
             
+            .back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+            
             @keyframes sprite{
                 100%{
                     background-position: -1024px;
@@ -124,6 +134,9 @@
   <link rel="stylesheet" type="text/css" href="style.css"> 
 	</head>
 	<body id="about">
+        
+        <!--Back to Top button-->
+        <a href=”#” class=”back-to-top” style=”display: inline;”></a>
 		<!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">	
             <div class="container">
@@ -136,10 +149,7 @@
                     
                   <a class="navbar-brand" href="about.html"><img src="images/GDClogo.png" alt="GDC"></a>
                 </div>
-<<<<<<< HEAD
-        </nav>
     <!--**Content**-->
-=======
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li id="liID"><a href="about.html">Home</a>
@@ -155,9 +165,11 @@
             </div>
 </nav> 
     <!-- Content -->
->>>>>>> 963442eabf97cb64deb9f51eeafd5d2550aaed2b
+
+    
     <!--Hero Page-->
     <div class="hero-unit">
+        
         <!--<div class="imageHolder"></div>-->
       <div class="container">
               <div class="row-fluid">
@@ -264,6 +276,9 @@
                     <li>3:00PM-5:00PM</li>
                 </ul>
                 </section>
+            
+            <!--Back to top button-->
+            <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 			</div> 
 
 		<!-- Footer -->
@@ -272,25 +287,8 @@
 		</footer>
         
         <!--Script-->
-        <script>
-            //**Popover - That pop-up thing over "game jam" link
-            $(document).ready(function(){
-                $('[data-toggle="popover"]').popover(); 
-            });
+        <script src="script/home.js"></script>
+        
             
-            //**Scrolling animation**
-            $('a[href^="#"]').on('click', function(event) {
-
-            var target = $(this.getAttribute('href'));
-
-            if( target.length ) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-            }
-
-            });
-        </script>
 	</body>
 </html>
