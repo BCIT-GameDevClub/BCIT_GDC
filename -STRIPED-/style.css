@@ -38,7 +38,9 @@ body {
     padding-top: 0px;
 }
 
-
+.navbar li{
+    font-size: 13px;
+}
 h4 {
     margin: 20px 10px 10px;
 }
@@ -204,8 +206,9 @@ position: absolute;
 }
 
 .section.white li .games{
-     background-image: url("images/cream_pixels.png");
-      margin-bottom: 10px; padding-bottom:10px; display: inline-block; width: 100%;  border: 2px solid; border-color: whitesmoke;
+    background-image: url("images/cream_pixels.png");
+    background-clip: rect(0px,500px,500px,0px);
+    margin-bottom: 10px; padding-bottom:10px; display: inline-block; width: 100%; 
 }
 
 .section.white.games
@@ -220,11 +223,12 @@ position: absolute;
 .visible-title h4
 {
     font-size: 2em;
+font-weight:600;;
 }
 
 .gamedesc
 {
-    font-size: 0.7em;
+    font-size: 1em;
 }
 
 .categories
