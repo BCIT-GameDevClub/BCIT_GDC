@@ -7,6 +7,7 @@ $(document).ready(function () {
 		} else {
 			$('#back-to-top').fadeOut();
 		}
+		$('#back-to-top').tooltip('hide');
 	});
 	   //Scroll body to 0px when clicked
 	$('#back-to-top').click(function () {
