@@ -1,5 +1,14 @@
+body{
+    background-color: #a3a3a3;
+}
 .folder{
+    margin: auto;
     position: relative;
+    margin-top: 60px;
+}
+.folder a{
+    color: blue;
+    text-decoration: underline;
 }
 
 .folder div{
@@ -15,17 +24,6 @@
     position: absolute;
     display: inline;
 }
-.cover-page{
-    top: 110px;
-}
-
-#f-cover-page{
-    z-index: -1;
-}
-
-.page{
-    top: 10px;
-}
 
 img{
 user-drag: none; 
@@ -36,69 +34,33 @@ user-select: none;
 -ms-user-select: none;
 }
 
-.paper{
-    background-image: url("../images/resources-page/page-1080p.png");
-    min-width: 746px;
-    min-height: 1209px;
-}
 
-.paper{
-    top: 100px;
-    left: 10px;
+/* Page indices */
+#f-cover-page{
+    z-index: -1;
 }
-
-.paper-content{
-    margin: 20px;
-    top: 70px;
-}
-
 #art-page{
     z-index: -2;
 }
-
-#art-page .sticky{
-    left: 20px;
-}
-
 #code-page{
     z-index: -3;
 }
-
-#code-page .sticky{
-    left: 125px;
-}
-
 #music-page{
     z-index: -4;
 }
-
-#music-page .sticky{
-    left: 230px;
-}
-
 #pm-page{
     z-index: -5;
 }
-
-#pm-page .sticky{
-    left: 335px;
-}
-
 #market-page{
     z-index: -6;
 }
-
-#market-page .sticky{
-    left: 440px;
-}
-
 #background-paper-page{
     z-index: -7;
 }
-
 #b-cover-page{
     z-index: -8;
 }
+/* End Page indices */
 
 
 
@@ -106,6 +68,219 @@ user-select: none;
     transition: transform 0.5s;
 }
 
+.cover-page{
+    top: 39px;
+}
+.page{
+    top: 3.5px;
+}
+.paper{
+    background-image: url("../images/resources-page/page-768p.png");
+    min-width: 400px;
+    min-height: 726px;
+    left: 20px;
+}
+.paper-content{
+    margin: 7px;
+    top: 24.5px;
+    max-width: 300px;
+}
+#art-page .sticky{
+    top:0px;
+    background-image: url("../images/resources-page/art-sticky-480p.png");
+}
+#code-page .sticky{
+    top:40px;
+    background-image: url("../images/resources-page/code-sticky-480p.png");
+}
+#music-page .sticky{
+    top:80px;
+    background-image: url("../images/resources-page/music-sticky-480p.png");
+}
+#pm-page .sticky{
+    top: 120px;
+    background-image: url("../images/resources-page/project-management-sticky-480p.png");
+}
+#market-page .sticky{
+    top: 160px;
+    background-image: url("../images/resources-page/marketing-sticky-480p.png");
+}
 .sticky:hover {
-    transform: translateY(-10px);
+    transform: translateX(10px) rotateZ(90deg);
+}
+.sticky{
+    left: -30px;
+    position: absolute;
+    width: 34px;
+    height: 68px;
+    transform: rotateZ(90deg);
+    z-index: 2;
+}
+h1{
+    font-size: 1.6em;
+    font-family: fantasy;
+}
+p{
+    font-size: 0.8em;
+    font-family: fantasy;
+}
+ul{
+    font-size: 0.75em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 1.6em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+    ul{
+        font-size: 0.8em;
+    }
+    .cover-page{
+        top: 66px;
+    }
+    .page{
+        top: 6px;
+    }
+    #f-cover-page{
+        background-image: url("../images/resources-page/front-cover-768p.png");
+        width: 540px;
+        height: 756px;
+    }
+    #b-cover-page{
+        background-image: url("../images/resources-page/back-cover-768p.png");
+        width: 583px;
+        height: 756px;
+    }
+    #background-paper-page{
+        background-image: url("../images/resources-page/background-papers-768p.png");
+        width: 579px;
+        height: 785px;
+    }
+    .paper{
+        background-image: url("../images/resources-page/page-768p.png");
+        min-width: 448px;
+        min-height: 726px;
+    }
+    .paper{
+        top: 60px;
+        left: 6px;
+        position: relative;
+    }
+    .paper-content{
+        max-width: 726px;
+        margin: 12px;
+        top: 42px;
+    }
+    #art-page .sticky{
+        left: 12px;
+        top: 0px;
+        background-image: url("../images/resources-page/art-sticky-768p.png");
+    }
+    #code-page .sticky{
+        left: 75px;
+        top: 0px;
+        background-image: url("../images/resources-page/code-sticky-768p.png");
+    }
+    #music-page .sticky{
+        left: 138px;
+        top: 0px;
+        background-image: url("../images/resources-page/music-sticky-768p.png");
+    }
+    #pm-page .sticky{
+        left: 201px;
+        top: 0px;
+        background-image: url("../images/resources-page/project-management-sticky-768p.png");
+    }
+    #market-page .sticky{
+        left: 264px;
+        top: 0px;
+        background-image: url("../images/resources-page/marketing-sticky-768p.png");
+    }
+    .sticky:hover {
+        transform: translateY(-10px) rotateZ(0deg);
+    }
+    .sticky{
+        position: relative;
+        width: 57px;
+        height: 115px;
+        transform: rotateZ(0deg);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    h1{
+        font-size: 2.5em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    ul{
+        font-size: 1em;
+    }
+    .cover-page{
+        top: 110px;
+    }
+    .page{
+        top: 10px;
+    }
+    #f-cover-page{
+        background-image: url("../images/resources-page/front-cover-1080p.png");
+        width: 900px;
+        height: 1259px;
+    }
+    #b-cover-page{
+        background-image: url("../images/resources-page/back-cover-1080p.png");
+        width: 971px;
+        height: 1259px;
+    }
+    #background-paper-page{
+        background-image: url("../images/resources-page/background-papers-1080p.png");
+        width: 965px;
+        height: 1307px;
+    }
+    .paper{
+        background-image: url("../images/resources-page/page-1080p.png");
+        min-width: 746px;
+        min-height: 1209px;
+    }
+    .paper{
+        top: 100px;
+        left: 10px;
+        position: relative;
+    }
+    .paper-content{
+        margin: 20px;
+        top: 70px;
+    }
+    #art-page .sticky{
+        left: 20px;
+        background-image: url("../images/resources-page/art-sticky-1080p.png");
+    }
+    #code-page .sticky{
+        left: 125px;
+        background-image: url("../images/resources-page/code-sticky-1080p.png");
+    }
+    #music-page .sticky{
+        left: 230px;
+        background-image: url("../images/resources-page/music-sticky-1080p.png");
+    }
+    #pm-page .sticky{
+        left: 335px;
+        background-image: url("../images/resources-page/project-management-sticky-1080p.png");
+    }
+    #market-page .sticky{
+        left: 440px;
+        background-image: url("../images/resources-page/marketing-sticky-1080p.png");
+    }
+    .sticky:hover {
+        transform: translateY(-10px);
+    }
+    .sticky{
+        position: relative;
+        min-width: 94px;
+        min-height: 192px;
+    }
 }

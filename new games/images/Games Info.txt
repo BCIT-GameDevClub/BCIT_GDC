@@ -1,0 +1,9 @@
+Ascension Adventure 2 (2017)
+- Ascension Adventure 2 is a retro fantasy/sci-fi dungeon crawler based on the Heroine Dusk codebase. It is the direct sequel to Ascension: Adventure but does not require you to play both. It is open-source with the code licensed GPLv3 and most art license CC-BY-SA. You can grab the source code on GitHub.
+- https://xcvg.itch.io/ascension-adventure-2
+- win, and
+
+Wavey Gravy (2017)
+- Wavey Gravy is a two player game of cat and mouse. There's a strange man walking around 2017 GGJ Vancouver. He's wearing some strange and monochrome outfit, bringing down the mood. The Jammers must stop him by being constantly stoked to keep on jammin'.
+- http://globalgamejam.org/2017/games/wavey-gravy
+- win, mac, web

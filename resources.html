@@ -1,122 +1,256 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>BCIT Game Development Club</title>
-		<meta charset="utf-8">
-
-		<style>
-		
-@font-face {
-    font-family: "Silkscreen";
-    src: url(../fonts/Silkscreen/slkscr.ttf) format("truetype");
-}
-		</style>
-
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		<script
-	  src="https://code.jquery.com/jquery-3.1.1.min.js"
-	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	  crossorigin="anonymous"></script>
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-
-		crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<script type="text/javascript" src="script/script.js"></script>
-        <link rel="stylesheet" type="text/css" href="style/resources.css">
-		<script type="text/javascript" src="script/resources.js"></script>
-	</head>
+<head>
+  <title>BCIT Game Development Club</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="style/resources.css">
+    <script src="script/resources.js"></script>
+</head>
 	<body>
 		<!-- Navigation -->
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<!-- Logo -->
-				<div class="navbar-header">
-					<!-- Insert Image for Logo -->
-					<a href="#" class="navbar-brand">BCIT Game Dev Club</a>
-				</div>
-				<div>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="games.html">Games</a></li>
-						<li><a href="contactus.html">Contact Us</a></li>
-						<li class="active"><a href="resources.html">Resources</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+   <nav class="navbar navbar-default navbar-fixed-top">	
+            <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                    
+                  <a class="navbar-brand" href="about.html"><img src="images/GDClogo.png" alt="GDC"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="about.html">Home</a>
+                        </li>
+                        <li><a href="games.html">Games</a>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a>
+                        </li>
+                        <li><a href="calendar.html">Calendar</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+</nav>    </div>
+</nav> 
 		<!-- Content -->
-        <!--
         <div class="container">
-          <h3>Resources</h3>
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Menu 1</a></li>
-            <li><a href="#">Menu 2</a></li>
-            <li><a href="#">Menu 3</a></li>
-          </ul>
-          <br>
-          <p><strong>Note:</strong> This example shows how to create a basic navigation tab. It is not toggleable/dynamic yet (you can't click on the links to display different content)- see the last example in the Bootstrap Tabs and Pills Tutorial to find out how this can be done.</p>
-        </div>
-        -->
-        <div class="container folder">
-            <div id="f-cover-page" class="cover-page">
-                <img src="images/resources-page/front-cover-1080p.png" />
-            </div>
-            <div id="art-page" class="page">
-                <div class="paper">
-                    <div class="paper-content">
-                        <h1>Art References</h1>
-                        <p>TEst</p>
+            <div class="folder">
+                <!-- Page Template
+                <div id="{{topic}}-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>{{topic}} Resources</h1>
+                            <p>{{Group name}}</p>
+                            <ul>
+                                <li>
+                                    Blender
+                                    <a href="{{link}}" target="_blank">website</a>
+                                    <a href="{{link}}" target="_blank">tutorials</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="sticky" onclick="changePage('{{topic}}-page')"></div>
                 </div>
-                <img class="sticky" src="images/resources-page/art-sticky-1080p.png" onclick="changePage(1, 'art-page')"/>
-            </div>
-            <div id="code-page" class="page">
-                <div class="paper">
-                    <div class="paper-content">
-                        <h1>Art References</h1>
-                        <p>TEst</p>
+
+        
+
+
+                -->
+                
+                
+                <div id="f-cover-page" class="cover-page">
+                </div>
+                <!-- Art Page -->
+                <div id="art-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Art Resources</h1>
+                            <p>Free 2D Tools</p>
+                            <ul>
+                                <li>
+                                    GIMP
+                                    <a href="https://www.gimp.org/" target="_blank">website</a>
+                                    <a href="https://www.gimp.org/tutorials/" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Inkscape
+                                    <a href="https://inkscape.org/en/" target="_blank">website</a>
+                                    <a href="https://inkscape.org/en/learn/tutorials/" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Piskel
+                                    <a href="http://www.piskelapp.com/" target="_blank">website</a>
+                                    <a href="http://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgIDEiZDkCQw/view" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Synfig Studio
+                                    <a href="http://www.synfig.org/" target="_blank">website</a>
+                                    <a href="http://wiki.synfig.org/Category:Tutorials" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Pyxel
+                                    <a href="http://pyxeledit.com/" target="_blank">website</a>
+                                    <a href="http://pyxeledit.com/learn.php" target="_blank">tutorials</a>
+                                </li>
+                            </ul>
+                            <p>Free 3D Tools</p>
+                            <ul>
+                                <li>
+                                    Blender
+                                    <a href="https://www.blender.org/" target="_blank">website</a>
+                                    <a href="https://www.blender.org/support/tutorials/" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Maya (For Students)
+                                    <a href="http://www.autodesk.com/education/free-software/maya" target="_blank">website</a>
+                                    <a href="https://www.youtube.com/watch?v=tElsku3aKQI" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Sketchup
+                                    <a href="https://www.sketchup.com/" target="_blank">website</a>
+                                    <a href="https://www.sketchup.com/learn" target="_blank">tutorials</a>
+                                </li>
+                            </ul>
+                            <p>Free Assets</p>
+                            <ul>
+                                <li><a href="https://opengameart.org/">Open Game Art</a></li>
+                                <li><a href="https://itch.io/game-assets">Itch</a></li>
+                                <li><a href="http://www.pixelprospector.com/the-big-list-of-royalty-free-graphics/">MORE!</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="sticky" onclick="changePage('art-page')"></div>
                 </div>
-                <img class="sticky" src="images/resources-page/code-sticky-1080p.png" onclick="changePage(2, 'code-page')"/>
-            </div>
-            <div id="music-page" class="page">
-                <div class="paper">
-                    <div class="paper-content">
-                        <h1>Art References</h1>
-                        <p>TEst</p>
+                <div id="code-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Programming Resources</h1>
+                            <p>Game Engines</p>
+                            <ul>
+                                <li>
+                                    Blender (3D Game Engine)
+                                    <a href="https://www.blender.org/" target="_blank">website</a>
+                                    <a href="https://www.blender.org/support/tutorials/" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Unity (3D/2D Game Engine)
+                                    <a href="https://unity3d.com/" target="_blank">website</a>
+                                    <a href="https://unity3d.com/learn/tutorials" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Unreal (3D/2D Game Engine)
+                                    <a href="https://www.unrealengine.com/what-is-unreal-engine-4" target="_blank">website</a>
+                                    <a href="https://docs.unrealengine.com/latest/INT/Videos/" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Ren'Py (Visual Novel Game Engine)
+                                    <a href="https://www.renpy.org/" target="_blank">website</a>
+                                    <a href="https://www.renpy.org/wiki/renpy/doc/tutorials/Tutorials" target="_blank">tutorials</a>
+                                </li>
+                                <li>
+                                    Twine (Interactive Text Game Engine)
+                                    <a href="http://twinery.org/" target="_blank">website</a>
+                                    <a href="http://www.auntiepixelante.com/twine/" target="_blank">tutorials</a>
+                                </li>
+                                <li><a href="http://www.pixelprospector.com/the-big-list-of-game-making-tools/" target="_blank">MORE!!!</a><li>
+                            </ul>
+                            <p>Learn Programming</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> 
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.codecademy.com/learn/all" target="_blank">CodeCademy</a> 
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>JavaScript</li>
+                                        <li>Python</li>
+                                        <li>Java</li>
+                                    </ul>
+                                </li>
+                                    <a href="https://www.tutorialspoint.com/index.htm" target="_blank">Tutorials Point</a> 
+                                    <ul>
+                                        <li>A lot</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="sticky" onclick="changePage('code-page')"></div>
                 </div>
-                <img class="sticky" src="images/resources-page/music-sticky-1080p.png" onclick="changePage(3, 'music-page')"/>
-            </div>
-            <div id="pm-page" class="page">
-                <div class="paper">
-                    <div class="paper-content">
-                        <h1>Art References</h1>
-                        <p>TEst</p>
+                <div id="music-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Music Resources</h1>
+                            <p>Free Tools</p>
+                            <ul>
+                                <li><a href="http://www.bfxr.net/" target="_blank">BFXR</a></li>
+                                <li><a href="https://sourceforge.net/projects/audacity/" target="_blank">Audacity</a></li>
+                                <li><a href="https://lmms.io/" target="_blank">LMMS</a></li>
+                                <li><a href="http://www.drpetter.se/project_musagi.html" target="_blank">Musagi</a></li>
+                            </ul>
+                            <p>Free Audio</p>
+                            <ul>
+                                <li><a href="https://opengameart.org/" target="_blank">Open Game Art</a></li>
+                                <li><a href="https://www.freesound.org/" target="_blank">Free Sound</a></li>
+                                <li><a href="http://www.pixelprospector.com/the-big-list-of-royalty-free-music-and-sounds-free-edition/" target="_blank">MORE!!!</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="sticky" onclick="changePage('music-page')"></div>
                 </div>
-                <img class="sticky" src="images/resources-page/project-management-sticky-1080p.png" onclick="changePage(4, 'pm-page')"/>
-            </div>
-            <div id="market-page" class="page">
-                <div class="paper">
-                    <div class="paper-content">
-                        <h1>Art References</h1>
-                        <p>TEst</p>
+                <div id="pm-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Project Management Resources</h1>
+                            <p>Version Control Tools</p>
+                            <ul>
+                                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                                <li><a href="https://bitbucket.org/product" target="_blank">Bitbucket</a></li>
+                                <li><a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree</a></li>
+                                
+                            </ul>
+                            <p>Task Management</p>
+                            <ul>
+                                <li><a href="http://hacknplan.com/" target="_blank">HacknPlan</a></li>
+                                <li><a href="https://trello.com/" target="_blank">Trello</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="sticky" onclick="changePage('pm-page')"></div>
                 </div>
-                <img class="sticky" src="images/resources-page/marketing-sticky-1080p.png" onclick="changePage(5, 'market-page')"/>
-            </div>
-            <div id="background-paper-page" class="cover-page">
-                <img src="images/resources-page/background-papers-1080p.png" />
-            </div>
-            <div id="b-cover-page" class="cover-page">
-                <img src="images/resources-page/back-cover-1080p.png" />
+                <div id="market-page" class="page">
+                    <div class="paper">
+                        <div class="paper-content">
+                            <h1>Publishing Resources</h1>
+                            <p>Publishing Platform</p>
+                            <ul>
+                                <li><a href="https://itch.io/developers" target="_blank">Itch.io</a></li>
+                                <li><a href="http://developers.armorgames.com/" target="_blank">Armorgames</a></li>
+                                <li><a href="http://www.kongregate.com/games/new" target="_blank">Kongregate</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sticky" onclick="changePage('market-page')"></div>
+                </div>
+                <div id="background-paper-page" class="cover-page">
+                </div>
+                <div id="b-cover-page" class="cover-page">
+                </div>
             </div>
         </div>
 

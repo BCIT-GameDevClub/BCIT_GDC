@@ -1,0 +1,306 @@
+body {
+ font-family: Montserrat, sans-serif;
+  line-height: 1.8;
+  
+    background-color: black;
+    background-image: url("images/ep_naturalblack.png");
+    background-repeat: repeat;
+    height: 100%;
+} 
+.container-fluid {
+
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #202830;
+  color = #b8b8b8;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #ff6d15 !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.navbar-brand{
+    padding-top: 0px;
+}
+
+.navbar li{
+    font-size: 13px;
+}
+h4 {
+    margin: 20px 10px 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+.pure-g {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.calendar{
+    margin-top: 100px;
+}
+
+.outerContainer
+{
+    width: 100%;
+    background-color: black;
+}
+
+#carousel-custom {
+    margin: 0 auto;
+    width: 100%;
+    background-color: black;
+}
+
+
+@media (min-width: 767px) {
+    .pure-g {
+        width: 750px;
+    }
+    .item.active img{
+position: absolute;
+    top: -10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+    width: auto;
+    margin: auto;
+    }
+    .item{
+        height: 100%
+    }
+    .item img{ 
+
+    }
+}
+
+@media(max-width: 768px){
+    .pure-g {
+        width:100%;
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .pure-g {
+    width: 1170px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    } 
+    
+    .item.active img{
+    position: absolute;
+    top: -10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+    width: auto;
+    margin: auto;
+    }
+
+    .item img{
+     
+    }
+}
+
+.item.active
+{
+   margin: auto;
+}
+.item.active img{
+    width: auto;
+    margin: auto;
+}
+
+.item
+{
+    height: 500px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.item img{
+    position: absolute;
+    top: -10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+    width: auto;
+    margin: auto;
+}
+#carousel-custom .carousel-indicators {
+    margin: 10px 0 0;
+    overflow: auto;
+    position: static;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+}
+
+#carousel-custom .carousel-indicators li {
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    margin: 0 !important;
+    width: auto;
+}
+
+#carousel-custom .carousel-indicators li img {
+    display: block;
+    opacity: 0.5;
+}
+
+#carousel-custom .carousel-indicators li.active img {
+    opacity: 1;
+}
+
+#carousel-custom .carousel-indicators li:hover img {
+    opacity: 0.75;
+}
+
+#carousel-custom .carousel-outer {
+    position: relative;
+}
+
+
+.gameslist
+{
+    list-style: none;
+}
+
+.section.white h2
+{
+    font-size: 1.6em; margin-top: 20%; text-align: center;
+}
+
+.section.white ul
+{
+    list-style: none; padding: 0; margin-top: 0px;
+}
+
+.section.white li .games{
+    background-image: url("images/cream_pixels.png");
+    background-clip: rect(0px,500px,500px,0px);
+    margin-bottom: 10px; padding-bottom:10px; display: inline-block; width: 100%; 
+}
+
+.section.white.games
+{
+    width: 100%;
+}
+.section.white li img
+{
+    padding-top: 15px; width: 100%;
+}
+
+.visible-title h4
+{
+    font-size: 2em;
+font-weight:600;;
+}
+
+.gamedesc
+{
+    font-size: 1em;
+}
+
+.categories
+{
+    margin-bottom: 10px;
+}
+.categories a
+{
+    font-size: 1em;
+    color: lightgray;
+}
+
+
+.visible-title a
+{
+    color: darkblue;
+}
+
+.divider
+{
+   color:#ff6d15;
+}
+
+@media (min-width: 480px){
+    .section.white h2
+    {
+        font-size: 1.6em; text-align: center;
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 1200px){
+    .section.white h2
+    {
+        font-size: 1.6em; text-align: center;
+        margin-top: 5%;
+    }
+}
+
+#about .footer
+{
+    background-color: #202830;
+    position: relative;
+    bottom: 0;
+    left: -3.5%;
+    width: 106%;
+    overflow: hidden;
+
+}
+
+.footer
+{
+    background-color: #202830;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer .container
+{
+    text-align: center;
+    align-content: center;
+        padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footer img
+{
+    width: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+    
+}

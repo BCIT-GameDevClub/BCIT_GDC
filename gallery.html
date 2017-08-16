@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+  <title>BCIT Game Development Club - Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+        padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+        }
+
+        footer {
+            margin: 50px 0;
+        }
+        img.img-responsive{
+            height: 50%;
+        }   
+        .thumb
+        { 
+            margin-bottom: 30px;
+            width: 500px;
+            
+        }
+        .thumb img
+        {
+            background-color: rgba(188,190,186,0.6);
+            width: 300px;
+            height: 200px;
+            object-fit: fill;
+            border: none;
+            
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          padding-top: 100px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background-color: black;
+        }
+
+        /* Modal Content */
+        .modal-content {
+          position: relative;
+          background-color: black;
+          margin: auto;
+          width: 50%;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        .mySlides {
+          display: block;
+            margin: 0 auto;
+            width: auto;
+            background-color: rgba(0,0,0,1);
+        }
+        .mySlides img
+        {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 1);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          display: block;
+          position: absolute;  
+          top:0; 
+        }
+
+        .caption-container {
+          text-align: center;
+          background-color: black;
+          padding: 2px 16px;
+          color: black;
+        }
+
+        img.demo {
+          opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+
+        img.hover-shadow {
+          transition: 0.3s
+        }
+
+        .hover-shadow:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
+    </style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <link rel="icon" href="images/icon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+   <nav class="navbar navbar-default navbar-fixed-top">	
+            <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                    
+                  <a class="navbar-brand" href="about.html"><img src="images/GDClogo.png" alt="GDC"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="about.html">Home</a>
+                        </li>
+                        <li><a href="games.html">Games</a>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a>
+                        </li>
+                        <li><a href="calendar.html">Calendar</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+</nav>
+    <section class="section white">
+        <div class="container">  
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide1.jpg" alt="" onclick="openModal();currentSlide(1)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide2.jpg" alt="" onclick="openModal();currentSlide(2)" >
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide3.jpg" alt="" onclick="openModal();currentSlide(3)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide4.jpg" alt="" onclick="openModal();currentSlide(4)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide5.jpg" alt="" onclick="openModal();currentSlide(5)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide6.jpg" alt="" onclick="openModal();currentSlide(6)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide7.jpg" alt="" onclick="openModal();currentSlide(7)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide8.jpg" alt="" onclick="openModal();currentSlide(8)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide9.jpg" alt="" onclick="openModal();currentSlide(9)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide10.jpg" alt="" onclick="openModal();currentSlide(10)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb" >
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide11.jpg" alt="" onclick="openModal();currentSlide(11)">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a href="#">
+                            <img class="img-thumbnail" src="images/slides/slide12.jpg" alt="" onclick="openModal();currentSlide(12)">
+                        </a>
+                    </div>
+            </div>
+        
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()" style="
+              color: white;
+              position: absolute;
+              top: 50px;
+              right: 25px;
+              font-size: 40px;
+              font-weight: bold;">&times;</span>
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 12</div>
+                    <img src="images/slides/slide1.jpg" >
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 12</div>
+                    <img src="images/slides/slide2.jpg">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 12</div>
+                    <img src="images/slides/slide3.jpg">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 12</div>
+                    <img src="images/slides/slide4.jpg">
+                </div>
+                    <div class="mySlides">
+                  <div class="numbertext">5 / 12</div>
+                    <img src="images/slides/slide5.jpg">
+                </div>
+                    <div class="mySlides">
+                  <div class="numbertext">6 / 12</div>
+                    <img src="images/slides/slide6.jpg">
+                </div>
+                    <div class="mySlides">
+                  <div class="numbertext">7 / 12</div>
+                    <img src="images/slides/slide7.jpg">
+                </div>
+                    <div class="mySlides">
+                  <div class="numbertext">8 / 12</div>
+                    <img src="images/slides/slide8.jpg">
+                </div>
+                    <div class="mySlides">
+                  <div class="numbertext">9 / 12</div>
+                    <img src="images/slides/slide9.jpg">
+                </div>
+                     <div class="mySlides">
+                  <div class="numbertext">10 / 12</div>
+                    <img src="images/slides/slide10.jpg">
+                </div>
+                     <div class="mySlides">
+                  <div class="numbertext">11 / 12</div>
+                    <img src="images/slides/slide11.jpg">
+                </div>
+                     <div class="mySlides">
+                  <div class="numbertext">12 / 12</div>
+                    <img src="images/slides/slide12.jpg">
+                </div>
+                                  
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+        </div>
+        
+         
+    </section>
+   
+<script>
+    
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  
+</script>
+</body>
+</html>
