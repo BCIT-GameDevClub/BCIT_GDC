@@ -79,12 +79,15 @@
                 opacity: 0.5;
                 z-index: -1;
                 box-shadow: 0px 0px 8px 3.5px;
+                display:inline-block;
+                
             }
             
             .hero-unit{
                 height: 100%;
                 width: 100%;
                 padding-top: 50px;
+                margin-bottom: 40%;
             }
             .container-fluid {
                 height: 100%;
@@ -122,12 +125,17 @@
             }
             
             body, html{
-                height: 100%;
+                height: auto;
                 width: 100%;
                 margin: 0 auto;
                 display: block;
             }
             
+            .content-text
+            {
+                padding-top: 20px;
+                margin-bottom: 40%;
+            }
             section row {
                 text-align: center;
             }
@@ -245,7 +253,7 @@
             
             <!--What We Do section-->
              <section style="min-height: 100%;">
-                <div class="content-text"></div>
+                <div class="content-text">
                 <div class="imageHolder"></div>
                 <h2>What we do</h2>
                 <p>To enrich our members experience we plan various activities such as...</p>
@@ -257,6 +265,7 @@
                 </ul>
                 <p>Our most notable club activity is our mini <a data-toggle="popover" data-placement="top" data-trigger="hover" title="A Game Jam is..." data-content="an event where participants gather for the sole purpose of creating a game. A game jam can be done alone or with a team and a jam usually goes on for 72 hours!">game jam</a> sessions. At these mini-game jam sessions the execs of the club provide one theme (or more) for their game and everyone works on it at the meeting. These mini-jams last for about 4 weeks to an entire semester depending on the difficulty of the theme. At the end of it we hold party in the form of a showcase, where we show off our creations within the club or to the public!
                 </p>
+                </div>
             </section>
             
                 <!--Meet our execs section-->
@@ -391,13 +400,22 @@
                     <li><strong>Meeting Location</strong>:</li>
                     <li>At the BCIT Burnaby Campus</li>
                     <li>Building SE 12</li>
-                    <li>Room 321</li>
+                    <li>Room 324</li>
                     <li><strong>Meeting Time</strong>:</li> 
                     <li>3:00PM-5:00PM</li>
                 </ul>
 
             </section>
-        <footer class="footer">
+        
+        
+        </div>
+   
+            <!--Back to top button-->
+            <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+			</div>
+        
+		<!-- Footer -->
+		<footer class="footer">
         <div class="container">
             <span class="sociallogos">
                 <a href="https://www.facebook.com/groups/bcitgamedevclub/"><img src="images/FB-f-Logo__blue_50.png" alt="fblogo"></a>
@@ -407,15 +425,6 @@
             </span>
         </div>
         </footer>
-        
-        </div>
-   
-            <!--Back to top button-->
-            <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-			</div>
-        
-		<!-- Footer -->
-		
         
         <!--Script-->
         <script src="script/home.js"></script>
