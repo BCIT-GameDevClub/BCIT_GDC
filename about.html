@@ -5,25 +5,30 @@
 		<meta charset="utf-8">
         <style>
 
-            #about {
+            #about
+            {
                 height: 100%;
                 width: 100%;
+                
             }
-            
-            #about h1 {
+            #about h1{
                 color: white;    
             }
             
-            #about h2 {
+            #about h2{
                 text-align: left;
                 font-weight: bold;
                 color: white;
             }
             
-            p, li {
+            #about p{
                 text-align: left;
                 font-size: 20px;
-                color: lightgray;
+                color: lightgray
+            }
+            
+            #about li{
+                color: lightgrey;
             }
 
             #about section {
@@ -36,14 +41,23 @@
             
             .thumbnail {
                 text-align: center;
-                max-width: 500px;
-                height: 480px;
+                width: 100%;
                 display:inline-block;
                 vertical-align: middle;
                 margin-top: 2%;
                 margin-bottom: 0;
+                min-height: 950px;
+                
             }
             
+            .caption h4
+            {
+                display:inline-block;
+                color: darkgrey;
+                text-align: center;
+                vertical-align: bottom;
+                
+            }
             .spacer{
                 margin: 500px;
             }
@@ -53,7 +67,7 @@
             {
                 padding-top: 33px;
                 padding-bottom: -70px;
-                max-width: 50%;
+                width: 70%;
             }
             
             .noStyle{
@@ -82,7 +96,7 @@
                 width: 100%;
             }
             .row{
-                display: block;
+                display: inline-block;
                 float: none;
                 text-align: center;
             }
@@ -114,72 +128,13 @@
             
             body, html{
                 height: 100%;
-                width: 100%;
-                margin: 0 auto;
-                display: block;
             }
             
             section row {
                 text-align: center;
             }
             
-            /**/
-            .flip-container {
-                perspective: 1000px;
-            }
-                /* flip the pane when hovered */
-                ‘.flip-container .selected .flipper{
-                    transform: rotateY(180deg);
-                }
-
-            .flip-container, .front, .back {
-                max-width: 400px;
-                max-height: 480px;
-            }
             
-            .flip-container .back p{
-                color: dimgray;
-            }
-            
-            .flip-container .front h3{
-                color: dimgray;
-            }
-            
-            .flip-container .front h4{
-                color: dimgray;
-            }
-            
-
-            /* flip speed goes here */
-            .flipper {
-                transition: 0.6s;
-                transform-style: preserve-3d;
-                position: relative;
-            }
-
-            .flipped {
-                transform: rotateY(180deg);
-            }
-            /* hide back of pane during swap */
-            .front, .back {
-                backface-visibility: hidden;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-
-            /* front pane, placed above back */
-            .front {
-                z-index: 2;
-                /* for firefox 31 */
-                transform: rotateY(0deg);
-            }
-
-            /* rotates thumbnail content so it is at the "back" of the card*/
-            .back {
-                transform: rotateY(180deg);
-            }
-
         </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -236,7 +191,7 @@
                   <p>Hello World! <br> You just found the headquarters of the BCIT Game Development Club!
                   <br>
                   Our club is, as you might have guessed; a club run by students at BCIT that develops games. The goal of our club is to provide resources, experience, and a collaborative environment for anyone interested in game development. And, of course, to have fun while doing it!</p>
-                  <p><a href="#target" class="btn btn-primary btn-large">Learn more! »</a></p>
+                  <p><a href="#target" class="btn btn-primary btn-large">Learn more!    »</a></p>
                 </div>
               </div>
           </div>
@@ -268,123 +223,54 @@
                 <!--Exec Thumbnails-->
                 <div class="row">
                     <!--Exec #1-->
-                    <div class="col-xs-6 col-sm-4">
-                        <div class="flip-container">
-                            <div class="flipper" onclick="flipped()">
-                                <div class="thumbnail">
-                                    <div class="front">
-                                        <!--re-arrange text to align!! Cause for some reason it isn\t abiding with the CSS!!!-->
-                                            <img class="peoplegif" src="images/Eiko.gif" alt="EIKOGIF">
-                                          <div class="caption">
-                                            <h3>Eiko Takeoka</h3>
-                                            <h4>Class: President</h4>
-                                            <h4>Click to see lore</h4>
-                                          </div>
-
-                                    </div>
-                                    <div class="back">
-                                      <div class="caption">
-                                        <p>"Madam President", otherwise known as "Eiko". She is slowly making her way to BCITs BTech program so she still lacks the knowledge and experience in terms of game development but somehow obtained the title of "el presedente." She may not be able to help you with any development questions, but she has passion for games and development more than anyone! "Got a programming question? No problem!--I will help you find someone who can help!" xD </p>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-6  col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img class="peoplegif" src="images/Eiko.gif" alt="EIKOGIF">
+                          <div class="caption">
+                            <h3>Eiko Takeoka<hr width="75%">President</h3>
+                            <p>"Madam President", otherwise known as "Eiko". She is slowly making her way to BCITs BTech program so she still lacks the knowledge and experience in terms of game development but somehow obtained the title of "el presedente." She may not be able to help you with any development questions, but she has passion for games and development more than anyone! "Got a programming question? No problem!--I will help you find someone who can help!" xD  </p>
+                          </div>
                         </div>
                     </div>
                     <!--Exec #2-->
-                     <div class="col-xs-6 col-sm-4">
-                        <div class="flip-container">
-                            <div class="flipper" onclick="flipped()">
-                                <div class="thumbnail">
-                                    <div class="front">
-                                        <!--re-arrange text to align!! Cause for some reason it isn\t abiding with the CSS!!!-->
-                                      <img class="peoplegif" src="images/Farga.gif" alt="FARGAGIF">
-                                      <div class="caption">
-                                        <h3>Farga Krishnanta</h3>
-                                        <h4>Class: Vice President - Internal Relations</h4>
-                                        <h4>Click to see lore</h4>
-                                      </div>
-                                    </div>
-                                    <div class="back">
-                                      <div class="caption">
-                                        <p>Our resident programmer, Vice President - Internal Relations and troll: Farga. A graduate from B-Tech program at BCIT, he has accomplished many feats such as: participating in multiple Game Jams, developed a multiplayer VR game and have just recently released an app game. If you have any programming or game developing questions, he is your guy!</p>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-6  col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img class="peoplegif" src="images/Farga.gif" alt="FARGAGIF">
+                          <div class="caption">
+                            <h3>Farga Krishnanta<hr width="75%">Vice President -  Internal Relations</h3>
+                              <p>Our resident programmer, Vice President - Internal Relations and troll: Farga. A graduate from B-Tech program at BCIT, he has accomplished many feats such as: participating in multiple Game Jams, developed a multiplayer VR game and have just recently released an app game. If you have any programming or game developing questions, he is your guy!</p>
+                          </div>
                         </div>
                     </div>
                     <!--Exec #3-->
-                     <div class="col-xs-6 col-sm-4">
-                        <div class="flip-container">
-                            <div class="flipper" onclick="flipped()">
-                                <div class="thumbnail">
-                                    <div class="front">
-                                        <!--re-arrange text to align!! Cause for some reason it isn\t abiding with the CSS!!!-->
-                                      <img class="peoplegif" src="http://orig13.deviantart.net/3f94/f/2012/308/2/6/day_3__sprite_by_bobguyperson-d5jzig1.png" alt="don't ask...">
-                                      <div class="caption">
-                                        <h3>George Padua</h3>
-                                        <h4>Class: Vice President - External Relations</h4>
-                                        <h4>Click to see lore</h4>
-                                      </div>
-                                    </div>
-                                    <div class="back">
-                                      <div class="caption">
-                                        <p>By day he is the clubs other programming expert, and by the...latter half of the day he is our Vice President - External Relations! Just like Farga, George is a fellow graduate from the B-Tech program and he also participated in game jams, developed a multiplayer VR game and release an app game. Together, George and Farga complete the Dynamic Duo (temp) aka, two of the founders of RaccooPack games!</p>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-6  col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img class="peoplegif" src="images/WIP-face.png" alt="don't ask...">
+                          <div class="caption">
+                            <h3>George Padua<hr width="75%">Vice President - External Relations</h3>
+                              <p>By day he is the clubs other programming expert, and by the...latter half of the day he is our Vice President - External Relations! Just like Farga, George is a fellow graduate from the B-Tech program and he also participated in game jams, developed a multiplayer VR game and release an app game. Together, George and Farga complete the Dynamic Duo (temp) aka, two of the founders of RaccooPack games.</p>
+                          </div>
                         </div>
                     </div>
-                    <!--
-                     <div class="col-xs-6 col-sm-4">
-                        <div class="flip-container">
-                            <div class="flipper" onclick="flipped()">
-                                <div class="thumbnail">
-                                    <div class="front">
-                                      
-                                      <img class="peoplegif" src="images/An.gif" alt="ANGIF">
-                                      <div class="caption">
-                                        <h3>An Hsu</h3>
-                                        <h4>Class: Vice President - External Relations</h4>
-                                        <h4>Click to see lore</h4>
-                                      </div>
-                                    </div>
-                                    <div class="back">
-                                      <div class="caption">
-                                        <p>By day he is the clubs other programming expert, and by the...latter half of the day he is our Vice President - External Relations! Just like Farga, George is a fellow graduate from the B-Tech program and he also participated in game jams, developed a multiplayer VR game and release an app game. Together, George and Farga complete the Dynamic Duo (temp) aka, two of the founders of RaccooPack games!</p>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <!--Exec #4-->
+                    <div class="col-6  col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img class="peoplegif" src="images/An.gif" alt="ANGIF">
+                          <div class="caption">
+                            <h3>An Hsu<hr width="75%">Marketing Director</h3>
+                              <p>Look up there! It's a bird! It's a plane! No, it's our Marketing Director An! An is our newest recruit who is also lacking knowledge in the game development department, but man does he make a nice logo! Thats right: our sleek new BCIT Game Development logo was made by none other than An himself! Feel free to say hi, and if you have a Nintendo Switch, feel free to challenge him on Mario Kart.</p>
+                          </div>
                         </div>
                     </div>
                     <!--Exec #5-->
-                    <!--
-                     <div class="col-xs-6 col-sm-4">
-                        <div class="flip-container">
-                            <div class="flipper" onclick="flipped()">
-                                <div class="thumbnail">
-                                    <div class="front">
-                                      
-                                      <img class="peoplegif" src="http://orig13.deviantart.net/3f94/f/2012/308/2/6/day_3__sprite_by_bobguyperson-d5jzig1.png" alt="don't ask...">
-                                      <div class="caption">
-                                        <h3>Patrick Star</h3>
-                                        <h4>Art Director</h4>
-                                        <h4>Click to see lore</h4>
-                                      </div>
-                                    </div>
-                                    <div class="back">
-                                      <div class="caption">
-                                          <p>Last but not least, our second newest recruit: Patrick the Art Director! <s>Thank god because majority of the execs can't draw</s> Look for someone who is always tired and should be getting some sleep. That would be Patrick. He has little to no experience game design as well but his art work is amazing! Patrick can help make assets for your game or give advice on what you can do to improve it. Just...give him 5 more minutes...</p>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-6  col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img class="peoplegif" src="images/WIP-face.png" alt="don't ask...">
+                          <div class="caption">
+                              <h3>Patrick<hr width="75%">Art Director</h3><p>Last but not least, our second newest recruit: Patrick the Art Director! <s>Thank god because majority of the execs can't draw</s> Look for someone who is always tired and should be getting some sleep. That would be Patrick. He has little to no experience game design as well but his art work is amazing! Patrick can help make assets for your game or give advice on what you can do to improve it. Just...give him 5 more minutes...</p>
+                          </div>
                         </div>
                     </div>
-                   --> 
                 </div>
             </section>
             
@@ -396,7 +282,7 @@
                     <li><strong>Meeting Location</strong>:</li>
                     <li>At the BCIT Burnaby Campus</li>
                     <li>Building SE 12</li>
-                    <li>Room 324</li>
+                    <li>Room 321</li>
                     <li><strong>Meeting Time</strong>:</li> 
                     <li>3:00PM-5:00PM</li>
                 </ul>
@@ -419,7 +305,6 @@
             <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 			</div>
         
-		<!-- Footer -->
 		
         
         <!--Script-->

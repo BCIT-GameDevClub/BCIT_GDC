@@ -32,10 +32,7 @@ $(document).ready(function () {
     });
     
     //**Pop-over effect**
-    $('.flipper').click(function(){
-      $(this).toggleClass('flipped');
-    });
-    
+    $('[data-toggle="popover"]').popover(); 
 });
 
 
