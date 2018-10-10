@@ -304,3 +304,11 @@ font-weight:600;;
     margin-right: 2px;
     
 }
+
+.sect .row {
+    display: none;
+}
+
+.sect h2 {
+    display: none;
+}
